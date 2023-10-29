@@ -1,3 +1,5 @@
+#include "sepch.h"
+
 #include "Application.h"
 #include "Sengine/Events/ApplicationEvent.h"
 #include "Sengine/Log.h"

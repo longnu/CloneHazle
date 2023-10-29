@@ -18,6 +18,9 @@ project "Sengine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "sepch.h"
+	pchsource "Sengine/src/sepch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
