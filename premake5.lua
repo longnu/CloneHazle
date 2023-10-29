@@ -26,6 +26,7 @@ project "Sengine"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -73,8 +74,8 @@ project "Sandbox"
 
 	includedirs
 	{
-		"Hazel/vendor/spdlog/include",
-		"Hazel/src"
+		"Sengine/vendor/spdlog/include",
+		"Sengine/src"
 	}
 
 	links
