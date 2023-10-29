@@ -4,10 +4,13 @@
 #include "Sengine/Events/ApplicationEvent.h"
 #include "Sengine/Log.h"
 
+#include <GLFW/glfw3.h>
+
 namespace Sengine {
 
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 
@@ -17,17 +20,12 @@ namespace Sengine {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			SE_TRACE(e);
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			SE_TRACE(e);
-		}
-
-		while (true);
 	}
 
 }

@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Sengine {
 
 	class SENGINE_API KeyEvent : public Event

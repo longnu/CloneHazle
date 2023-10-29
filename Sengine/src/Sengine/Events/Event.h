@@ -1,9 +1,7 @@
 #pragma once
 
+#include "sepch.h"
 #include "Sengine/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Sengine {
 

@@ -1,3 +1,6 @@
 [submodule "Sengine/vendor/spdlog"]
 	path = Sengine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Sengine/vendor/GLFW"]
+	path = Sengine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

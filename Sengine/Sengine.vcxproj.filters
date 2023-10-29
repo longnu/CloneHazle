@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Sengine">
       <UniqueIdentifier>{2E277BEC-9A06-FA87-A31E-855E0F7D60E9}</UniqueIdentifier>
     </Filter>
@@ -9,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Sengine.h" />
     <ClInclude Include="src\Sengine\Application.h">
       <Filter>Sengine</Filter>
@@ -34,17 +43,21 @@
     <ClInclude Include="src\Sengine\Log.h">
       <Filter>Sengine</Filter>
     </ClInclude>
-    <ClInclude Include="sepch.h" />
+    <ClInclude Include="src\Sengine\Window.h">
+      <Filter>Sengine</Filter>
+    </ClInclude>
     <ClInclude Include="src\sepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Sengine\Application.cpp">
       <Filter>Sengine</Filter>
     </ClCompile>
     <ClCompile Include="src\Sengine\Log.cpp">
       <Filter>Sengine</Filter>
     </ClCompile>
-    <ClCompile Include="sepch.cpp" />
     <ClCompile Include="src\sepch.cpp" />
   </ItemGroup>
 </Project>
