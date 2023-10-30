@@ -40,6 +40,12 @@
     <ClInclude Include="src\Sengine\Events\MouseEvent.h">
       <Filter>Sengine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Sengine\Layer.h">
+      <Filter>Sengine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sengine\LayerStack.h">
+      <Filter>Sengine</Filter>
+    </ClInclude>
     <ClInclude Include="src\Sengine\Log.h">
       <Filter>Sengine</Filter>
     </ClInclude>
@@ -47,8 +53,6 @@
       <Filter>Sengine</Filter>
     </ClInclude>
     <ClInclude Include="src\sepch.h" />
-    <ClInclude Include="src\Sengine\Layer.h" />
-    <ClInclude Include="src\Sengine\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
@@ -57,11 +61,15 @@
     <ClCompile Include="src\Sengine\Application.cpp">
       <Filter>Sengine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Sengine\Layer.cpp">
+      <Filter>Sengine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sengine\LayerStack.cpp">
+      <Filter>Sengine</Filter>
+    </ClCompile>
     <ClCompile Include="src\Sengine\Log.cpp">
       <Filter>Sengine</Filter>
     </ClCompile>
     <ClCompile Include="src\sepch.cpp" />
-    <ClCompile Include="src\Sengine\Layer.cpp" />
-    <ClCompile Include="src\Sengine\LayerStack.cpp" />
   </ItemGroup>
 </Project>

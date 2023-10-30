@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Sengine/vendor/GLFW/include"
+IncludeDir["Glad"] = "Sengine/vendor/Glad/include"
 
 include "Sengine/vendor/GLFW"
+include "Sengine/vendor/Glad"
 
 project "Sengine"
 	location "Sengine"
@@ -37,12 +39,14 @@ project "Sengine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links 
 	{ 
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "Sengine"
 		defines
 		{
 			"SE_PLATFORM_WINDOWS",
-			"SE_BUILD_DLL"
+			"SE_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands

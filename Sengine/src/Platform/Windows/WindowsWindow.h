@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Sengine/Window.h"
-
 #include <GLFW/glfw3.h>
 
 namespace Sengine {

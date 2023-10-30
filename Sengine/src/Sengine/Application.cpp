@@ -1,10 +1,10 @@
 #include "sepch.h"
 
 #include "Application.h"
-#include "Sengine/Events/ApplicationEvent.h"
+
 #include "Sengine/Log.h"
 
-#include <GLFW/glfw3.h>
+#include <glad/glad.h>
 
 namespace Sengine {
 
