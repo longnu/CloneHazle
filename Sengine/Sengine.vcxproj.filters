@@ -47,6 +47,8 @@
       <Filter>Sengine</Filter>
     </ClInclude>
     <ClInclude Include="src\sepch.h" />
+    <ClInclude Include="src\Sengine\Layer.h" />
+    <ClInclude Include="src\Sengine\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
@@ -59,5 +61,7 @@
       <Filter>Sengine</Filter>
     </ClCompile>
     <ClCompile Include="src\sepch.cpp" />
+    <ClCompile Include="src\Sengine\Layer.cpp" />
+    <ClCompile Include="src\Sengine\LayerStack.cpp" />
   </ItemGroup>
 </Project>

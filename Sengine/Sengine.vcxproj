@@ -150,6 +150,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Sengine\Layer.h" />
+    <ClInclude Include="src\Sengine\LayerStack.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Sengine.h" />
     <ClInclude Include="src\Sengine\Application.h" />
@@ -164,6 +166,8 @@
     <ClInclude Include="src\sepch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Sengine\Layer.cpp" />
+    <ClCompile Include="src\Sengine\LayerStack.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Sengine\Application.cpp" />
     <ClCompile Include="src\Sengine\Log.cpp" />

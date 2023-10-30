@@ -3,6 +3,7 @@
 // For use by Hazel applications
 
 #include "Sengine/Application.h"
+#include "Sengine/Layer.h"
 #include "Sengine/Log.h"
 
 // ---Entry Point---------------------
