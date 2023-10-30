@@ -14,7 +14,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Sengine/vendor/GLFW/include"
 IncludeDir["Glad"] = "Sengine/vendor/Glad/include"
-IncludeDir["ImGui"] = "Sengine/vendor/imgui/backends"
+IncludeDir["ImGui"] = "Sengine/vendor/imgui"
 
 include "Sengine/vendor/GLFW"
 include "Sengine/vendor/Glad"
@@ -29,7 +29,7 @@ project "Sengine"
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	pchheader "sepch.h"
-	pchsource "Sengine/src/sepch.cpp"
+	pchsource "Sengine/src/hzpch.cpp"
 
 	files
 	{
@@ -73,17 +73,17 @@ project "Sengine"
 
 	filter "configurations:Debug"
 		defines "SE_DEBUG"
-		--buildoptions "/MDd"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SE_RELEASE"
-		--buildoptions "/MD"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "SE_DIST"
-		--buildoptions "/MD"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -123,12 +123,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "SE_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SE_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "SE_DIST"
+		buildoptions "/MD"
 		optimize "On"

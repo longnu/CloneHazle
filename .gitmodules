@@ -4,6 +4,3 @@
 [submodule "Sengine/vendor/GLFW"]
 	path = Sengine/vendor/GLFW
 	url = https://github.com/TheCherno/glfw
-[submodule "Sengine/vendor/imgui"]
-	path = Sengine/vendor/imgui
-	url = https://github.com/ocornut/imgui.git

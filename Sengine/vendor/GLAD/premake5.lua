@@ -21,5 +21,5 @@ project "Glad"
         systemversion "latest"
         staticruntime "On"
         
-    filter { "system:windows", "configurations:Release" }
-        buildoptions "/MT"
+    
+    buildoptions "/MT"

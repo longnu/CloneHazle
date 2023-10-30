@@ -4,7 +4,7 @@
 
 namespace Sengine {
 
-	class ImGuiLayer : public Layer
+	class SENGINE_API ImGuiLayer : public Layer
 	{
 	public:
 		ImGuiLayer();
@@ -16,7 +16,7 @@ namespace Sengine {
 		void OnEvent(Event& event);
 
 	private:
-
+		float m_Time = 0.0f;
 
 	};
 
